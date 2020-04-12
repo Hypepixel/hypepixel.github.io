@@ -37,7 +37,7 @@ div {
     text-decoration: none;
     box-shadow: 0 0 0 1px inset rgba(236, 232, 225, 0.3);
     position: relative;
-    margin: 10px 0;
+    margin: 24px 0;
   }
   div button.white:hover > p {
     color: #ece8e1;

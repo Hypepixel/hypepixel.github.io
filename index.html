@@ -9,17 +9,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="shortcut icon" href="favicon.png">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli&display=swap">
   <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <link rel="stylesheet"href="css/style.css" >
+  <link rel="stylesheet" type="text/css" href="css/style.css" >
+  <link rel="stylesheet" type="text/css" href="css/toast.css" >
 </head>
 <body>
+    <div class="container">
+        <div class="mc-button full lang">
+            <div class="title"><img src="images/icon.png"/></div>
+        </div>
+        <button class="mc-button full address" onclick="launch_toast()" data-clipboard-text="mc.hypepixel.xyz">
+            <div class="title">
+                <span class="text">Join Server</span>
+            </div>
+        </button>
+    </div>
+      <!--
     <div class="container">
         <img src="icon.png" width="316px">
         <button class="white address" onclick="launch_toast()" data-clipboard-text="mc.hypepixel.xyz">
             <p><span class="bg"></span><span class="base"></span><span class="text">Play</span><span class="label">mc.hypepixel.xyz</span></p>
         </button>
-    </div>
+    </div>-->
 
     <div id="toast"><div id="icon"><i class="fas fa-exclamation"></i></div><div id="desc">Copied to clipboard!</div></div>
 </body>

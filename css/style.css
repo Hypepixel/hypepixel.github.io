@@ -32,9 +32,17 @@ body {
   position: relative;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 30pt 30pt 30pt;
+  grid-template-areas: "icon eu address";
+  grid-gap: 8px;
+}
+
 .mc-button {
-  display: inline-block;
-  width: 480px;
+  height: 30pt;
+  width: calc(30pt * 10);
   cursor: pointer;
   white-space: nowrap;
   user-select: none;
@@ -68,19 +76,19 @@ body {
   padding-top: 5px;
 }
 
-.mc-button.full {
-  height: 100%;
-}
-
-.mc-button.lang img {
+.mc-button.icon img {
   width: 36px;
   height: 24px;
 }
 
-.mc-button.lang {
+.mc-button.icon {
   width: 38px;
 }
 
-.mc-button.lang .title {
-  padding-bottom: 0;
+.mc-button.eu img {
+  width: 20px;
+}
+
+.mc-button.eu {
+  width: 38px;
 }
